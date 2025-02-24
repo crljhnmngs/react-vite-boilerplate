@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo } from 'react';
 import logo from '../../assets/icons/logo.png';
 import { useUserStore } from '../../store/user/useUserStore';
-import { getRandomUsers } from '../../api/user/getRandomUsers';
+import { getRandomUsers } from '../../service/user/randomUserService';
 import { useQuery } from '@tanstack/react-query';
 
 export const Header = () => {
@@ -35,7 +35,7 @@ export const Header = () => {
                         </p>
                     ) : (
                         <>
-                            <p className="text-white font-medium text-lg">
+                            <p className="text-customColor font-medium text-lg">
                                 {user?.name.first} {user?.name.last}
                             </p>
                             <img

@@ -12,6 +12,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+@theme {
+    --color-customColor: #d3d3d3;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
         animation: App-logo-spin infinite 15s linear;

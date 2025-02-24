@@ -1,44 +1,47 @@
 {
-  "name": "react-vite-boilerplate",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "prepare": "husky"
-  },
-  "dependencies": {
-    "@tailwindcss/vite": "^4.0.8",
-    "@tanstack/react-query": "^5.66.9",
-    "autoprefixer": "^10.4.20",
-    "axios": "^1.7.9",
-    "postcss": "^8.5.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "tailwindcss": "^4.0.8",
-    "zustand": "^5.0.3"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^19.7.1",
-    "@commitlint/config-conventional": "^19.7.1",
-    "@eslint/js": "^9.21.0",
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
-    "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^9.21.0",
-    "eslint-config-prettier": "^10.0.1",
-    "eslint-plugin-react": "^7.37.4",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.18",
-    "globals": "^15.15.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.4.3",
-    "prettier": "^3.5.2",
-    "typescript": "~5.7.2",
-    "typescript-eslint": "^8.24.1",
-    "vite": "^6.1.0"
-  }
+    "name": "react-vite-boilerplate",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc -b && vite build",
+        "lint": "eslint .",
+        "preview": "vite preview",
+        "prepare": "husky"
+    },
+    "dependencies": {
+        "@tailwindcss/vite": "^4.0.8",
+        "@tanstack/react-query": "^5.66.9",
+        "autoprefixer": "^10.4.20",
+        "axios": "^1.7.9",
+        "postcss": "^8.5.3",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "tailwindcss": "^4.0.8",
+        "zustand": "^5.0.3"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^19.7.1",
+        "@commitlint/config-conventional": "^19.7.1",
+        "@eslint/js": "^9.21.0",
+        "@types/react": "^19.0.8",
+        "@types/react-dom": "^19.0.3",
+        "@vitejs/plugin-react": "^4.3.4",
+        "eslint": "^9.21.0",
+        "eslint-config-prettier": "^10.0.1",
+        "eslint-plugin-react": "^7.37.4",
+        "eslint-plugin-react-hooks": "^5.0.0",
+        "eslint-plugin-react-refresh": "^0.4.18",
+        "globals": "^15.15.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^15.4.3",
+        "prettier": "^3.5.2",
+        "typescript": "~5.7.2",
+        "typescript-eslint": "^8.24.1",
+        "vite": "^6.1.0"
+    },
+    "lint-staged": {
+        "*.{js,cjs,ts,tsx,css}": "npm run lint"
+    }
 }

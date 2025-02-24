@@ -1,13 +1,13 @@
-import axios from 'axios';
 import { User, FetchUsersParams, ApiResponse } from '../../store/user/types';
 import { RANDOM_USER_API_URL } from '../../lib/const';
+import http from '../httpService';
 
 export const getRandomUsers = async ({
     results = 5,
     nationality = '',
 }: FetchUsersParams = {}): Promise<User[]> => {
     try {
-        const response = await axios.get<ApiResponse>(RANDOM_USER_API_URL, {
+        const response = await http.get<ApiResponse>(RANDOM_USER_API_URL, {
             params: {
                 results,
                 nat: nationality,
